@@ -1,0 +1,49 @@
+/*================================================*
+  Taskbar
+ *================================================*/
+.taskbar {
+  .taskbar-bg-layer-2 {
+    opacity: 1;
+    background-color: var(--color-gray-100);
+  }
+
+  .weg-separator {
+    .horizontal & {
+      &.weg-separator-1 {
+        border-left: 1px solid var(--color-gray-200);
+      }
+
+      &.weg-separator-2 {
+        border-right: 1px solid var(--color-gray-200);
+      }
+    }
+
+    .vertical & {
+      &.weg-separator-1 {
+        border-top: 1px solid var(--color-gray-200);
+      }
+
+      &.weg-separator-2 {
+        border-bottom: 1px solid var(--color-gray-200);
+      }
+    }
+  }
+
+  .weg-item {
+    .item-bg-layer-1 {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &:hover {
+      .item-bg-layer-1 {
+        background-color: var(--color-gray-400);
+      }
+    }
+  }
+
+  .weg-item-icon {
+    width: 75%;
+    height: 75%;
+  }
+}
